@@ -34,7 +34,7 @@ Working through the book: iOS Programming - The Big Nerd Ranch Guide (6th Editio
 - [ ] Removing an image
 - [ ] Camera overlay
 - [ ] PNG
-- [] Stacked text field and labels
+- [ ] Stacked text field and labels
 
 #### [Touch Tracker](./TouchTracker)
 - [ ] Colors
