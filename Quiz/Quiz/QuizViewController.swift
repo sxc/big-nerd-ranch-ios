@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class QuizViewController: UIViewController {
 
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var answerLabel: UILabel!

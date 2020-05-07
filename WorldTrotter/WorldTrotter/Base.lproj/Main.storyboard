@@ -67,32 +67,18 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
         </scene>
-        <!--Map-->
-        <scene sceneID="6LT-Cv-g6c">
-            <objects>
-                <viewController id="mdy-nJ-6sm" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="97S-yI-99D">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
-                    <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="Qoa-R1-4eg"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sdN-gW-9q4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1894.2028985507247" y="95.758928571428569"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="irj-LL-Z9p">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="x5G-P9-6zN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oIP-mv-8In">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="e1K-D5-Oz2"/>
-                        <segue destination="mdy-nJ-6sm" kind="relationship" relationship="viewControllers" id="jTf-To-Iim"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ora-4V-10P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -102,6 +88,5 @@
     </scenes>
     <resources>
         <image name="ConvertIcon" width="48.5" height="32.5"/>
-        <image name="MapIcon" width="48.5" height="32.5"/>
     </resources>
 </document>
