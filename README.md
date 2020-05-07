@@ -10,7 +10,7 @@ Working through the book: iOS Programming - The Big Nerd Ranch Guide (6th Editio
 - [ ] More stack views
 
 #### [World Trotter](./WorldTrotter)
-- [ ] More auto layout practice
+- [X] More auto layout practice
 - [ ] Disallow alphabetic characters
 - [ ] Dark mode
 - [ ] Another tab
