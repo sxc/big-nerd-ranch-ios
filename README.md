@@ -52,4 +52,7 @@ Working through the book: iOS Programming - The Big Nerd Ranch Guide (6th Editio
 
 ### Resources
 - [iOS Programming: The Big Nerd Ranch Guide (7th Edition)](https://www.bignerdranch.com/books/ios-programming/)
-- [Big Nerd Ranch forum](https://forums.bignerdranch.com/c/ios-programming-the-big-nerd-ranch-guide-7th-edi)
+- [Big Nerd Ranch forum](https://forums.bignerdranch.com/c/ios-programming-7th-edition/691)
+
+### Inspirtion by
+- [Working through the book: iOS Programming - The Big Nerd Ranch Guide (6th Edition), includes completed challenges.](https://github.com/Thieurom/big-nerd-ranch-ios)
