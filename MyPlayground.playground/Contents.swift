@@ -111,4 +111,17 @@ if let pieType = PieType(rawValue: pieRawValue) {
 }
 
 // Closures
+let compareAscending = {(i: Int, j: Int) -> Bool in
+    return i < j
+}
 
+compareAscending(42,2)
+compareAscending(-2,12)
+
+var numbers = [42, 9, 12, -17]
+
+//numbers.sort(by: compareAscending)
+
+numbers.sort(by: {(i, j) -> Bool in
+    return i < j
+})
