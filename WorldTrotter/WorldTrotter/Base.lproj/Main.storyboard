@@ -48,16 +48,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="DUr-Hd-irp" firstAttribute="top" secondItem="ZKS-ng-IwT" secondAttribute="bottom" constant="8" id="22k-6o-Or0"/>
-                            <constraint firstItem="H6s-Ci-Sho" firstAttribute="centerX" secondItem="yiU-i6-C8y" secondAttribute="centerX" id="71A-ao-6Q7"/>
-                            <constraint firstItem="AkM-ba-bOB" firstAttribute="centerX" secondItem="yiU-i6-C8y" secondAttribute="centerX" id="BhV-6V-edN"/>
-                            <constraint firstItem="DUr-Hd-irp" firstAttribute="centerX" secondItem="yiU-i6-C8y" secondAttribute="centerX" id="FfS-mK-1i5"/>
-                            <constraint firstItem="ZKS-ng-IwT" firstAttribute="top" secondItem="yiU-i6-C8y" secondAttribute="bottom" constant="8" id="Oe1-E3-UbO"/>
-                            <constraint firstItem="yiU-i6-C8y" firstAttribute="top" secondItem="H6s-Ci-Sho" secondAttribute="bottom" constant="8" id="TDI-vH-rOR"/>
-                            <constraint firstItem="H6s-Ci-Sho" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="pSY-g0-KpL"/>
-                            <constraint firstItem="AkM-ba-bOB" firstAttribute="top" secondItem="DUr-Hd-irp" secondAttribute="bottom" constant="8" id="qRR-dn-mjC"/>
-                            <constraint firstItem="H6s-Ci-Sho" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xdk-QX-aIA"/>
-                            <constraint firstItem="ZKS-ng-IwT" firstAttribute="centerX" secondItem="yiU-i6-C8y" secondAttribute="centerX" id="yS5-kf-dQg"/>
+                            <constraint firstItem="H6s-Ci-Sho" firstAttribute="centerX" secondItem="yiU-i6-C8y" secondAttribute="centerX" id="1tQ-65-A88"/>
+                            <constraint firstItem="AkM-ba-bOB" firstAttribute="top" secondItem="DUr-Hd-irp" secondAttribute="bottom" constant="8" id="9Pi-Iq-0Xc"/>
+                            <constraint firstItem="H6s-Ci-Sho" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BOx-Nd-ziq"/>
+                            <constraint firstItem="H6s-Ci-Sho" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="EJX-jp-1iv"/>
+                            <constraint firstItem="ZKS-ng-IwT" firstAttribute="centerX" secondItem="yiU-i6-C8y" secondAttribute="centerX" id="RZR-yI-mDs"/>
+                            <constraint firstItem="DUr-Hd-irp" firstAttribute="centerX" secondItem="yiU-i6-C8y" secondAttribute="centerX" id="meD-SF-cH5"/>
+                            <constraint firstItem="ZKS-ng-IwT" firstAttribute="top" secondItem="yiU-i6-C8y" secondAttribute="bottom" constant="8" id="mvs-Kj-DgS"/>
+                            <constraint firstItem="DUr-Hd-irp" firstAttribute="top" secondItem="ZKS-ng-IwT" secondAttribute="bottom" constant="8" id="qdQ-9X-COY"/>
+                            <constraint firstItem="yiU-i6-C8y" firstAttribute="top" secondItem="H6s-Ci-Sho" secondAttribute="bottom" constant="8" id="riG-nq-sgs"/>
+                            <constraint firstItem="AkM-ba-bOB" firstAttribute="centerX" secondItem="yiU-i6-C8y" secondAttribute="centerX" id="xHk-9f-CEf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
