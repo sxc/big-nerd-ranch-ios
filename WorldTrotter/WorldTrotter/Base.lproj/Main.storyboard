@@ -78,6 +78,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="ctc-cX-SAW" kind="relationship" relationship="viewControllers" id="9uY-x3-tOA"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="e1K-D5-Oz2"/>
                     </connections>
                 </tabBarController>
@@ -85,8 +86,25 @@
             </objects>
             <point key="canvasLocation" x="984.05797101449286" y="95.758928571428569"/>
         </scene>
+        <!--Map-->
+        <scene sceneID="ktP-Z2-w2e">
+            <objects>
+                <viewController id="ctc-cX-SAW" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FJH-rm-v17">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Ll2-M9-U8g"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="DaW-gt-NOw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JC4-Ij-PF7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1848" y="105"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ConvertIcon" width="48.5" height="32.5"/>
+        <image name="MapIcon" width="48.5" height="32.5"/>
     </resources>
 </document>
