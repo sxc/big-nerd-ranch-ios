@@ -10,6 +10,8 @@ import UIKit
 
 class ConversionViewController: UIViewController {
     
+    @IBOutlet var celsiusLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -17,7 +19,8 @@ class ConversionViewController: UIViewController {
     }
 
 
-
-
+    @IBAction func fahreheitFieldEditingChanged(_ textField: UITextField) {
+        celsiusLabel.text = textField.text
+    }
 }
 
