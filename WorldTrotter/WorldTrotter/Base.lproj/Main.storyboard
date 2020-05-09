@@ -46,6 +46,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="fahreheitFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="xho-mq-2kU"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="tyI-gl-2FR"/>
                                 </connections>
                             </textField>
                         </subviews>
@@ -97,8 +98,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ctc-cX-SAW" kind="relationship" relationship="viewControllers" id="9uY-x3-tOA"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="e1K-D5-Oz2"/>
+                        <segue destination="ctc-cX-SAW" kind="relationship" relationship="viewControllers" id="9uY-x3-tOA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ora-4V-10P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
