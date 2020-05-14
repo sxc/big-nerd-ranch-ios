@@ -23,7 +23,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let itemStore = ItemStore()
         
         // Access the ItemsViewControlller and set its item store
-        let itemsController = window!.rootViewController as! ItemsViewController
+//        let itemsController = window!.rootViewController as! ItemsViewController
+        let navController = window!.rootViewController as! UINavigationController
+        let itemsController = navController.topViewController as! ItemsViewController
+        
         itemsController.itemStore = itemStore
     }
 
