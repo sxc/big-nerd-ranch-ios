@@ -85,7 +85,7 @@
                                     <outlet property="nameLabel" destination="Pyh-Gz-oPM" id="Zly-De-5hr"/>
                                     <outlet property="serialNumberLabel" destination="0KG-De-Nq8" id="lNe-2k-fgL"/>
                                     <outlet property="valueLabel" destination="tbd-tj-Vuf" id="I7k-F6-EXJ"/>
-                                    <segue destination="En5-Mh-o0T" kind="show" id="U2I-wn-XwI"/>
+                                    <segue destination="En5-Mh-o0T" kind="show" identifier="showItem" id="U2I-wn-XwI"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -158,7 +158,7 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Date Created" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FzT-xH-qhy">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FzT-xH-qhy">
                                         <rect key="frame" x="0.0" y="102" width="374" height="706"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
