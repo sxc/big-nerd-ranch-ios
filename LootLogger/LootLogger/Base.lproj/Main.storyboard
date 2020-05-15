@@ -86,7 +86,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="znQ-YQ-j9N">
-                                <rect key="frame" x="20" y="96" width="374" height="774"/>
+                                <rect key="frame" x="20" y="96" width="374" height="122.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aXY-VH-L0O">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -146,7 +146,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FzT-xH-qhy">
-                                        <rect key="frame" x="0.0" y="102" width="374" height="672"/>
+                                        <rect key="frame" x="0.0" y="102" width="374" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -157,13 +157,26 @@
                                     <constraint firstItem="Wz5-U0-CZX" firstAttribute="leading" secondItem="0cX-WK-7nt" secondAttribute="leading" id="vUO-iR-4Wh"/>
                                 </constraints>
                             </stackView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gg4-ll-SRK">
+                                <rect key="frame" x="0.0" y="227" width="414" height="635"/>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="REr-bz-Ac7">
+                                        <connections>
+                                            <action selector="choosePhotoSource:" destination="En5-Mh-o0T" id="0hI-xN-IUa"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="znQ-YQ-j9N" firstAttribute="bottom" secondItem="T0z-az-3mb" secondAttribute="bottom" constant="8" id="8DO-RK-4Ic"/>
+                            <constraint firstItem="gg4-ll-SRK" firstAttribute="leading" secondItem="0U7-gQ-Taz" secondAttribute="leading" id="0CW-t8-hQJ"/>
+                            <constraint firstItem="gg4-ll-SRK" firstAttribute="top" secondItem="znQ-YQ-j9N" secondAttribute="bottom" constant="8" id="BT7-M2-D1d"/>
                             <constraint firstItem="znQ-YQ-j9N" firstAttribute="leading" secondItem="T0z-az-3mb" secondAttribute="leading" constant="20" id="dKn-AA-jmu"/>
+                            <constraint firstItem="T0z-az-3mb" firstAttribute="bottom" secondItem="gg4-ll-SRK" secondAttribute="bottom" id="glS-3I-KFH"/>
                             <constraint firstItem="znQ-YQ-j9N" firstAttribute="leading" secondItem="T0z-az-3mb" secondAttribute="leading" constant="20" id="t58-cE-cId"/>
+                            <constraint firstAttribute="trailing" secondItem="gg4-ll-SRK" secondAttribute="trailing" id="v5m-4u-tCp"/>
                             <constraint firstItem="T0z-az-3mb" firstAttribute="trailing" secondItem="znQ-YQ-j9N" secondAttribute="trailing" constant="20" id="wUa-Lq-QlP"/>
                             <constraint firstItem="znQ-YQ-j9N" firstAttribute="top" secondItem="T0z-az-3mb" secondAttribute="top" constant="8" id="y7s-2P-WpG"/>
                         </constraints>
