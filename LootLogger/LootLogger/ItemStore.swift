@@ -45,7 +45,7 @@ class ItemStore {
         allItems.insert(movedItem, at: toIndex)
     }
     
-    func saveChanges() -> Bool {
+    @objc func saveChanges() -> Bool {
         
         print("Saving items to: \(itemArchiveURL)")
         
@@ -59,6 +59,22 @@ class ItemStore {
             print("Error encoding allItems: \(encodingError)")
             return false
         }
+        
+    }
+    
+    init() {
+        do {
+            let data = try Data(contentsOf: itemArchiveURL)
+            let unarchiver = PropertyListDecoder()
+            let items = try unarchiver.decode([Item].self, from: data)
+            allItems = items
+            
+        } catch {
+            print("Error reading in saved items: \(error)")
+        }
+        
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(saveChanges), name: UIScene.didEnterBackgroundNotification, object: nil)
         
     }
     
