@@ -26,6 +26,8 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         }
     }
     
+    var imageStore: ImageStore!
+    
     // Date formatter and value formatter
     
     let numberFormatter: NumberFormatter = {
@@ -51,6 +53,13 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
 //        dateLabel.text = "\(item.dateCreated)"
         valueField.text = numberFormatter.string(from: NSNumber(value: item.valueInDollars))
         dateLabel.text = dateFormatter.string(from: item.dateCreated)
+        
+        // Get the item key
+        let key = item.itemKey
+        
+        // If there is an associated image with the item, display it on the image view
+        let imageToDisplay = imageStore.image(forKey: key)
+        imageView.image = imageToDisplay
     }
     
     
@@ -118,6 +127,10 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         // Get picked image from info dictionary
         let image = info[.originalImage] as! UIImage
+        
+        // Store the image in the ImageStore for the item's key
+        imageStore.setImage(image, forKey: item.itemKey)
+        
         // Put the image on the screen in the image view
         imageView.image = image
         // Take image picker off the screen you must call this diss method
