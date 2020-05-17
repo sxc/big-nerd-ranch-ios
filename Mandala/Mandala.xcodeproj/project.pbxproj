@@ -17,6 +17,8 @@
 		34AC972B2471519A002E23CF /* MandalaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC972A2471519A002E23CF /* MandalaUITests.swift */; };
 		34AC9739247151AA002E23CF /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC9738247151AA002E23CF /* Mood.swift */; };
 		34AC973B247151D8002E23CF /* MoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC973A247151D8002E23CF /* MoodEntry.swift */; };
+		34AC973D247156C8002E23CF /* UIColor+Mandala.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC973C247156C8002E23CF /* UIColor+Mandala.swift */; };
+		34AC973F24715A70002E23CF /* UIImage+Mandala.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC973E24715A70002E23CF /* UIImage+Mandala.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		34AC972C2471519A002E23CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34AC9738247151AA002E23CF /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		34AC973A247151D8002E23CF /* MoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntry.swift; sourceTree = "<group>"; };
+		34AC973C247156C8002E23CF /* UIColor+Mandala.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Mandala.swift"; sourceTree = "<group>"; };
+		34AC973E24715A70002E23CF /* UIImage+Mandala.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Mandala.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				34AC97162471519A002E23CF /* Info.plist */,
 				34AC9738247151AA002E23CF /* Mood.swift */,
 				34AC973A247151D8002E23CF /* MoodEntry.swift */,
+				34AC973C247156C8002E23CF /* UIColor+Mandala.swift */,
+				34AC973E24715A70002E23CF /* UIImage+Mandala.swift */,
 			);
 			path = Mandala;
 			sourceTree = "<group>";
@@ -269,6 +275,8 @@
 				34AC970D24715198002E23CF /* ViewController.swift in Sources */,
 				34AC973B247151D8002E23CF /* MoodEntry.swift in Sources */,
 				34AC970924715198002E23CF /* AppDelegate.swift in Sources */,
+				34AC973D247156C8002E23CF /* UIColor+Mandala.swift in Sources */,
+				34AC973F24715A70002E23CF /* UIImage+Mandala.swift in Sources */,
 				34AC970B24715198002E23CF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
