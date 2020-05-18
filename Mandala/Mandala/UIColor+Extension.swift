@@ -1,9 +1,5 @@
-//
-//  UIColor+Mandala.swift
-//  Mandala
-//
-//  Created by Xiaochun Shen on 2020/5/17.
-//  Copyright © 2020 SXC. All rights reserved.
+// 
+//  Copyright © 2020 Big Nerd Ranch
 //
 
 import UIKit
@@ -18,4 +14,5 @@ extension UIColor {
     static let meh = UIColor(named: "mehGray")!
     static let sad = UIColor(named: "sadBlue")!
     static let sleepy = UIColor(named: "sleepyLightRed")!
+    
 }
