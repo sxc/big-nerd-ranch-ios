@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E1u-YV-nTZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E1u-YV-nTZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,8 +29,24 @@
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="5hq-JZ-UXM">
                                             <rect key="frame" x="8" y="8" width="398" height="50"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lL-k6-Ejd" customClass="ImageSelector" customModule="Mandala" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="398" height="50"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="CV0-OK-3cB"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <action selector="moodSelectionChanged:" destination="E1u-YV-nTZ" eventType="valueChanged" id="fCp-vM-DQF"/>
+                                                    </connections>
+                                                </view>
+                                            </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="4lL-k6-Ejd" secondAttribute="bottom" id="GY0-p0-JoA"/>
                                                 <constraint firstAttribute="height" constant="50" id="Vbc-qs-73p"/>
+                                                <constraint firstItem="4lL-k6-Ejd" firstAttribute="leading" secondItem="5hq-JZ-UXM" secondAttribute="leading" id="aGv-Mq-zwS"/>
+                                                <constraint firstItem="4lL-k6-Ejd" firstAttribute="top" secondItem="5hq-JZ-UXM" secondAttribute="top" constant="8" id="gaB-1a-4ii"/>
+                                                <constraint firstAttribute="trailing" secondItem="4lL-k6-Ejd" secondAttribute="trailing" id="mWV-58-Pau"/>
                                             </constraints>
                                         </stackView>
                                     </subviews>
@@ -74,6 +90,7 @@
                     </view>
                     <connections>
                         <outlet property="addMoodButton" destination="Caw-5H-d5n" id="PDw-s9-h1g"/>
+                        <outlet property="moodSelector" destination="4lL-k6-Ejd" id="Biq-HX-hOu"/>
                         <outlet property="stackView" destination="5hq-JZ-UXM" id="vXZ-hj-fIj"/>
                     </connections>
                 </viewController>
