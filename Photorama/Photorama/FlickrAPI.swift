@@ -20,9 +20,20 @@ struct FlickrAPI {
     static func photos(fromJSON data: Data) -> Result<[Photo], Error> {
         do {
             let decoder = JSONDecoder()
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+            dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
+            decoder.dateDecodingStrategy = .formatted(dateFormatter)
+            
             let flickrResponse = try decoder.decode(FlickrResponse.self, from: data)
-            return .success(flickrResponse.photosInfo.photos)
-        } catch {
+            
+//            return .success(flickrResponse.photosInfo.photos)
+            let photos = flickrResponse.photosInfo.photos.filter {
+                $0.remoteURL != nil }
+            return .success(photos)
+        } catch let error {
             return .failure(error)
         }
     }
