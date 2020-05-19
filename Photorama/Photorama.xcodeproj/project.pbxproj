@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3449778E24740DD600D14B45 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449778D24740DD600D14B45 /* PhotoCollectionViewCell.swift */; };
 		346AA67E2473669300E3B383 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346AA67D2473669300E3B383 /* Photo.swift */; };
 		346AA6802473B44500E3B383 /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346AA67F2473B44500E3B383 /* PhotoDataSource.swift */; };
 		34B6F48E24724FAE002320D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B6F48D24724FAE002320D9 /* AppDelegate.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3449778D24740DD600D14B45 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		346AA67D2473669300E3B383 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		346AA67F2473B44500E3B383 /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
 		34B6F48A24724FAE002320D9 /* Photorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +120,7 @@
 				34B6F4BF24725A44002320D9 /* PhotoStore.swift */,
 				346AA67D2473669300E3B383 /* Photo.swift */,
 				346AA67F2473B44500E3B383 /* PhotoDataSource.swift */,
+				3449778D24740DD600D14B45 /* PhotoCollectionViewCell.swift */,
 			);
 			path = Photorama;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				346AA67E2473669300E3B383 /* Photo.swift in Sources */,
+				3449778E24740DD600D14B45 /* PhotoCollectionViewCell.swift in Sources */,
 				346AA6802473B44500E3B383 /* PhotoDataSource.swift in Sources */,
 				34B6F4C024725A44002320D9 /* PhotoStore.swift in Sources */,
 				34B6F49224724FAE002320D9 /* PhotosViewController.swift in Sources */,

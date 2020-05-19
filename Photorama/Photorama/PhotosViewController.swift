@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhotosViewController: UIViewController {
+class PhotosViewController: UIViewController, UICollectionViewDelegate {
     
 //    @IBOutlet private var imageView: UIImageView!
     @IBOutlet var collectionView: UICollectionView!
@@ -20,6 +20,7 @@ class PhotosViewController: UIViewController {
         super.viewDidLoad()
         
         collectionView.dataSource = photoDataSource
+        collectionView.delegate = self
         
         store.fetchInterestingPhotos {
             (photosResult) in
@@ -60,5 +61,27 @@ class PhotosViewController: UIViewController {
 //        }
 //    }
 
+    
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        let photo = photoDataSource.photos[indexPath.row]
+        
+        // Download the image data, which could take some time
+        store.fetchImage(for: photo) { (result) -> Void in
+            // The index path for the photo might have changed between the time the request started and fished, so find the most
+            // recent index path
+            guard let photoIndex = self.photoDataSource.photos.firstIndex(of: photo),
+                case let .success(image) = result else {
+                    return
+            }
+            let photoIndexPath = IndexPath(item: photoIndex, section: 0)
+            
+            // When the request finishes, find the current cell for this photo
+            if let cell = self.collectionView.cellForItem(at: photoIndexPath) as? PhotoCollectionViewCell {
+                cell.update(displaying: image)
+            }
+            
+        }
+    }
 }
 
