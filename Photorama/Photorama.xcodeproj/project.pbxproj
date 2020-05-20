@@ -16,6 +16,7 @@
 		34476B1A2474BD1E00D14CB4 /* PhotoramaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34476B192474BD1E00D14CB4 /* PhotoramaTests.swift */; };
 		34476B252474BD1E00D14CB4 /* PhotoramaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34476B242474BD1E00D14CB4 /* PhotoramaUITests.swift */; };
 		34476B332474C66E00D14CB4 /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34476B322474C66E00D14CB4 /* FlickrAPI.swift */; };
+		34476B352474D35100D14CB4 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34476B342474D35100D14CB4 /* PhotoStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		34476B242474BD1E00D14CB4 /* PhotoramaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoramaUITests.swift; sourceTree = "<group>"; };
 		34476B262474BD1E00D14CB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34476B322474C66E00D14CB4 /* FlickrAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
+		34476B342474D35100D14CB4 /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				34476B0D2474BD1E00D14CB4 /* LaunchScreen.storyboard */,
 				34476B102474BD1E00D14CB4 /* Info.plist */,
 				34476B322474C66E00D14CB4 /* FlickrAPI.swift */,
+				34476B342474D35100D14CB4 /* PhotoStore.swift */,
 			);
 			path = Photorama;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34476B352474D35100D14CB4 /* PhotoStore.swift in Sources */,
 				34476B072474BD1A00D14CB4 /* PhotosViewController.swift in Sources */,
 				34476B032474BD1A00D14CB4 /* AppDelegate.swift in Sources */,
 				34476B052474BD1A00D14CB4 /* SceneDelegate.swift in Sources */,
