@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34476AF52474B4DC00D14CB4 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34476AF42474B4DC00D14CB4 /* ImageStore.swift */; };
 		3449778E24740DD600D14B45 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449778D24740DD600D14B45 /* PhotoCollectionViewCell.swift */; };
 		346AA67E2473669300E3B383 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346AA67D2473669300E3B383 /* Photo.swift */; };
 		346AA6802473B44500E3B383 /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346AA67F2473B44500E3B383 /* PhotoDataSource.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		34476AF42474B4DC00D14CB4 /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		3449778D24740DD600D14B45 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		346AA67D2473669300E3B383 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		346AA67F2473B44500E3B383 /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		34B6F48C24724FAE002320D9 /* Photorama */ = {
 			isa = PBXGroup;
 			children = (
+				34476AF42474B4DC00D14CB4 /* ImageStore.swift */,
 				34B6F48D24724FAE002320D9 /* AppDelegate.swift */,
 				34B6F48F24724FAE002320D9 /* SceneDelegate.swift */,
 				34B6F49124724FAE002320D9 /* PhotosViewController.swift */,
@@ -276,6 +279,7 @@
 			files = (
 				346AA67E2473669300E3B383 /* Photo.swift in Sources */,
 				3449778E24740DD600D14B45 /* PhotoCollectionViewCell.swift in Sources */,
+				34476AF52474B4DC00D14CB4 /* ImageStore.swift in Sources */,
 				346AA6802473B44500E3B383 /* PhotoDataSource.swift in Sources */,
 				34B6F4C024725A44002320D9 /* PhotoStore.swift in Sources */,
 				34B6F49224724FAE002320D9 /* PhotosViewController.swift in Sources */,
