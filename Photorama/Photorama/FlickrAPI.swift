@@ -51,7 +51,7 @@ struct FlickrAPI {
     }
     
     struct FlickrResponse: Codable {
-//        let photos: FlickrPhotosResponse
+
         let photosInfo: FlickrPhotosResponse
         
         enum CodingKeys: String, CodingKey {
@@ -60,8 +60,7 @@ struct FlickrAPI {
     }
     
     struct FlickrPhotosResponse: Codable {
-//        let photo: [Photo]
-        
+
         let photos: [Photo]
         
         enum CodingKeys: String, CodingKey {
@@ -69,6 +68,23 @@ struct FlickrAPI {
         }
     }
     
+    
+    static func photos(fromJSON data: Data) -> Result<[Photo], Error> {
+        do {
+            let decoder = JSONDecoder()
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+            dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
+            decoder.dateDecodingStrategy = .formatted(dateFormatter)
+            
+            let flickrResponse = try decoder.decode(FlickrResponse.self, from: data)
+            return .success(flickrResponse.photosInfo.photos)
+        } catch {
+            return .failure(error)
+        }
+    }
 
     
 }
