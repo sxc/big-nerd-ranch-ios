@@ -2,7 +2,7 @@
 //  PhotoramaUITests.swift
 //  PhotoramaUITests
 //
-//  Created by Xiaochun Shen on 2020/5/18.
+//  Created by Xiaochun Shen on 2020/5/20.
 //  Copyright © 2020 SXC. All rights reserved.
 //
 

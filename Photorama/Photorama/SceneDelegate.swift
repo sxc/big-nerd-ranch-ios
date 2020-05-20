@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Photorama
 //
-//  Created by Xiaochun Shen on 2020/5/18.
+//  Created by Xiaochun Shen on 2020/5/20.
 //  Copyright © 2020 SXC. All rights reserved.
 //
 
@@ -18,12 +18,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
-        
-        let rootViewController = window!.rootViewController as! UINavigationController
-            let photosViewController =
-                rootViewController.topViewController as! PhotosViewController
-            photosViewController.store = PhotoStore()
-        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -53,4 +47,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
+
+
+}
 
