@@ -10,7 +10,7 @@ import Foundation
 
 class Photo: Codable {
     let title: String
-    let remoteURL: URL
+    let remoteURL: URL?
     let photoID: String
     let dateTaken: Date
     
