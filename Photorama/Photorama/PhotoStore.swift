@@ -28,6 +28,9 @@ class PhotoStore {
         let task = session.dataTask(with: request) {
             (data, response, error) in
        
+            // Bronze Challenge
+            self.printHTTPHeader(for: response)
+            
             let result = self.processPhotosRequest(data: data, error: error)
             
             OperationQueue.main.addOperation {
@@ -84,4 +87,18 @@ class PhotoStore {
     }
     
     
+    // MARK: - Bronze Challenge: Printing the Response Information
+    func printHTTPHeader(for response: URLResponse?) {
+        guard let aHTTPURLResponse = response as? HTTPURLResponse else {
+            return
+        }
+        
+        let statusCode = aHTTPURLResponse.statusCode
+        print("HTTP Status Code: \(statusCode)")
+        print("Message: \(HTTPURLResponse.localizedString(forStatusCode: statusCode))")
+        print("All HTTP Header Fields:")
+        for (key, value) in aHTTPURLResponse.allHeaderFields {
+            print("\(key) : \(value)")
+        }
+    }
 }
