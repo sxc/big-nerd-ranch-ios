@@ -6,7 +6,12 @@
 //  Copyright © 2020 SXC. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+enum PhotoError: Error {
+    case imageCreateionError
+    case missingImageURL
+}
 
 class PhotoStore {
     
@@ -37,4 +42,38 @@ class PhotoStore {
         
         return FlickrAPI.photos(fromJSON: jsonData)
     }
+    
+    // implementing a method to download image data
+    func fetchImage(for photo: Photo,
+                    completion: @escaping (Result<UIImage, Error>) -> Void) {
+        guard let photoURL = photo.remoteURL else { completion(.failure(PhotoError.missingImageURL))
+        return
+        }
+        let request = URLRequest(url: photoURL)
+        let task = session.dataTask(with: request) {
+            (data, response, error)
+            in
+            
+            let result = self.processImageRequest(data: data, error: error)
+            completion(result)
+        }
+        task.resume()
+    }
+    
+    // Processing the image request data
+    private func processImageRequest(data: Data?, error: Error?) -> Result<UIImage, Error> {
+        guard let imageData = data,
+        let image = UIImage(data: imageData) else {
+            // Couldn't create an image
+            if data == nil {
+                return .failure(error!)
+            } else {
+                return .failure(PhotoError.imageCreateionError)
+            }
+            
+        }
+        return .success(image)
+    }
+    
+    
 }
