@@ -9,7 +9,7 @@
 import UIKit
 
 class PhotoDataSource: NSObject, UICollectionViewDataSource {
-    var photos = [Photo]()
+    var photos = [FlickrPhoto]()
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return photos.count
