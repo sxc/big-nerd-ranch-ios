@@ -23,7 +23,7 @@ class PhotoStore {
     }()
     
     
-    func fetchInterestingPhotos(completion: @escaping (Result<[FlickrPhoto], Error>) -> Void) {
+    func fetchInterestingPhotos(completion: @escaping (Result<[Photo], Error>) -> Void) {
         
         let url = FlickrAPI.interestingPhotosURL
         let request = URLRequest(url: url)
@@ -44,7 +44,7 @@ class PhotoStore {
         
     }
     
-    private func processPhotosRequest(data: Data?, error: Error?) -> Result<[FlickrPhoto], Error> {
+    private func processPhotosRequest(data: Data?, error: Error?) -> Result<[Photo], Error> {
         guard let jsonData = data else {
             return .failure(error!)
         }
@@ -53,7 +53,7 @@ class PhotoStore {
     }
     
     // implementing a method to download image data
-    func fetchImage(for photo: FlickrPhoto,
+    func fetchImage(for photo: Photo,
                     completion: @escaping (Result<UIImage, Error>) -> Void) {
         
         let photoKey = photo.photoID
