@@ -45,7 +45,15 @@ class PhotoStore {
             // Bronze Challenge
             self.printHTTPHeader(for: response)
             
-            let result = self.processPhotosRequest(data: data, error: error)
+            
+            var result = self.processPhotosRequest(data: data, error: error)
+            if case .success = result {
+                do {
+                    try self.persistentContainer.viewContext.save()
+                } catch {
+                    result = .failure(error)
+                }
+            }
             
             OperationQueue.main.addOperation {
                 completion(result)
@@ -149,6 +157,22 @@ class PhotoStore {
         print("All HTTP Header Fields:")
         for (key, value) in aHTTPURLResponse.allHeaderFields {
             print("\(key) : \(value)")
+        }
+    }
+    
+    // MARK: - Fetch all photos from disk
+    func fetchAllPhotos(completion: @escaping (Result<[Photo], Error>) -> Void) {
+        let fetchRequest: NSFetchRequest<Photo> = Photo.fetchRequest()
+        let sortByDateTaken = NSSortDescriptor(key: #keyPath(Photo.dateTaken), ascending: true)
+        fetchRequest.sortDescriptors = [sortByDateTaken]
+        let viewContext = persistentContainer.viewContext
+        viewContext.perform {
+            do {
+                let allPhotos = try viewContext.fetch(fetchRequest)
+                completion(.success(allPhotos))
+            } catch {
+                completion(.failure(error))
+            }
         }
     }
 }
