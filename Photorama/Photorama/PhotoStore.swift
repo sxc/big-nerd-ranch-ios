@@ -74,6 +74,22 @@ class PhotoStore {
         switch FlickrAPI.photos(fromJSON: jsonData) {
         case let .success(flickrPhotos):
             let photos = flickrPhotos.map { flickrPhoto -> Photo in
+                
+                // Check whether there is an existing photo with a given ID
+                let fetchRequest: NSFetchRequest<Photo> = Photo.fetchRequest()
+                let predicate = NSPredicate(format: "\(#keyPath(Photo.photoID)) == \(flickrPhoto.photoID)")
+                fetchRequest.predicate = predicate
+                var fetchedPhotos: [Photo]?
+                context.performAndWait {
+                    fetchedPhotos = try? fetchRequest.execute()
+                }
+                
+                if let existingPhoto = fetchedPhotos?.first {
+                    return existingPhoto
+                }
+                
+                
+                
                 var photo: Photo!
                 context.performAndWait {
                     photo = Photo(context: context)
