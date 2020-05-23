@@ -85,6 +85,8 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate {
         }
     }
     
+    // MARK: - injecting data into TagsViewController
+    
     
 }
 
