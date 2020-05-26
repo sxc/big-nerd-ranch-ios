@@ -112,6 +112,7 @@ class TagsViewController: UITableViewController {
                 } catch {
                     print("Core Data save field: \(error).")
                 }
+                self.updateTags()
             }
             
         }
