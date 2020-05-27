@@ -64,9 +64,9 @@ struct FlickrAPI {
         }
         components.queryItems = queryItems
         
-        if let componetsURL = components.url {
-            print("URL = \(componetsURL)")
-        }
+//        if let componetsURL = components.url {
+//            print("URL = \(componetsURL)")
+//        }
         return components.url!
         
     }

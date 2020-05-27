@@ -22,15 +22,7 @@ class PhotoStore {
         let task = session.dataTask(with: request) {
             (data, response, error) in
             
-//            if let jsonData = data {
-//                if let jsonString = String(data: jsonData, encoding: .utf8) {
-//                    print(jsonString)
-//                }
-//            } else if let requestError = error {
-//                print("Error fetching interesting photos: \(requestError)")
-//            } else {
-//                print("Unexpected error with the request")
-//            }
+
             let result = self.processPhotosRequest(data: data, error: error)
             completion(result)
             
