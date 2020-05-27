@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34739457247E348D00E9B970 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34739456247E348D00E9B970 /* Photo.swift */; };
 		34FCF5ED247CD9EE0081B28B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCF5EC247CD9EE0081B28B /* AppDelegate.swift */; };
 		34FCF5EF247CD9EE0081B28B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCF5EE247CD9EE0081B28B /* SceneDelegate.swift */; };
 		34FCF5F1247CD9EE0081B28B /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FCF5F0247CD9EE0081B28B /* PhotosViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		34739456247E348D00E9B970 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		34FCF5E9247CD9EE0081B28B /* FlickrDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FCF5EC247CD9EE0081B28B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34FCF5EE247CD9EE0081B28B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				34FCF5FA247CD9F20081B28B /* Info.plist */,
 				34FCF61C247CDC9A0081B28B /* FlickrAPI.swift */,
 				34FCF61E247CE6AF0081B28B /* PhotoStore.swift */,
+				34739456247E348D00E9B970 /* Photo.swift */,
 			);
 			path = FlickrDemo;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34739457247E348D00E9B970 /* Photo.swift in Sources */,
 				34FCF61F247CE6AF0081B28B /* PhotoStore.swift in Sources */,
 				34FCF5F1247CD9EE0081B28B /* PhotosViewController.swift in Sources */,
 				34FCF5ED247CD9EE0081B28B /* AppDelegate.swift in Sources */,
